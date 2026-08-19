@@ -1,0 +1,62 @@
+/* Hallmark · genre: editorial · macrostructure: Split Studio · theme: custom · enrichment: real studio photography · nav: N1b-adapted · footer: Ft1 */
+.portfolio-shell {
+  --portfolio-canvas: #f7f5ef;
+  --portfolio-surface: #fcfbf7;
+  --portfolio-technical-surface: #10213a;
+  --portfolio-ink: #152138;
+  --portfolio-muted-ink: #536174;
+  --portfolio-navy: #10213a;
+  --portfolio-coral: #d45c50;
+  --portfolio-system-blue: #315e8c;
+  --portfolio-photo-blue: #52859d;
+  --portfolio-photo-blue-about: #4c7f98;
+  --portfolio-success: #59735a;
+  --portfolio-warning: #8a622f;
+  --portfolio-steel: #8491a3;
+  --portfolio-rule: #cbd1d7;
+  --portfolio-rule-strong: #9ca7b4;
+  --portfolio-focus: #a8453d;
+  --portfolio-on-dark: #f7f5ef;
+  --portfolio-on-dark-muted: #bdc6d1;
+  --portfolio-coral-on-dark: #f08c80;
+  --portfolio-dark-rule-strong: rgb(247 245 239 / 28%);
+  --portfolio-dark-rule: rgb(247 245 239 / 24%);
+  --portfolio-dark-rule-soft: rgb(247 245 239 / 18%);
+  --portfolio-success-on-dark: #c8ddc8;
+
+  --portfolio-font-display: var(--font-portfolio-archivo), "Arial Narrow", sans-serif;
+  --portfolio-font-body: var(--font-portfolio-source), "Segoe UI", sans-serif;
+  --portfolio-font-mono: var(--font-portfolio-mono), "Courier New", monospace;
+
+  --portfolio-text-xs: 0.75rem;
+  --portfolio-text-sm: 0.875rem;
+  --portfolio-text-base: 1rem;
+  --portfolio-text-lg: clamp(1.125rem, 1.5vw, 1.375rem);
+  --portfolio-text-xl: clamp(1.5rem, 2.5vw, 2.25rem);
+  --portfolio-text-2xl: clamp(2.25rem, 5.6vw, 5.75rem);
+
+  --portfolio-space-2xs: 0.375rem;
+  --portfolio-space-xs: 0.625rem;
+  --portfolio-space-sm: 1rem;
+  --portfolio-space-md: 1.5rem;
+  --portfolio-space-lg: 2.25rem;
+  --portfolio-space-xl: 3.5rem;
+  --portfolio-space-2xl: clamp(4.5rem, 8vw, 8rem);
+  --portfolio-space-3xl: clamp(6rem, 12vw, 11rem);
+
+  --portfolio-container: 84rem;
+  --portfolio-reading: 68ch;
+  --portfolio-gutter: clamp(1rem, 4vw, 4rem);
+  --portfolio-rule-width: 1px;
+  --portfolio-radius-sm: 0.125rem;
+  --portfolio-radius-md: 0.375rem;
+  --portfolio-shadow: 0 1rem 3rem rgb(16 33 58 / 8%);
+
+  --portfolio-ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --portfolio-ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+  --portfolio-ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --portfolio-duration-micro: 120ms;
+  --portfolio-duration-hover: 180ms;
+  --portfolio-duration-reveal: 460ms;
+  --portfolio-duration-hero: 500ms;
+}
