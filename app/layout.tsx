@@ -1,9 +1,12 @@
 import type React from "react"
 import type { Metadata } from "next"
+import Script from "next/script"
 import { Inter, League_Spartan, Pacifico } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import { OFFICIAL_NAME, profile } from "@/lib/profile"
 import "./globals.css"
+
+const GA_MEASUREMENT_ID = "G-1PZKGRZPZJ"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -198,6 +201,19 @@ export default function RootLayout({
         <link rel="alternate" hrefLang="es" href="https://www.jmrodri.site/es" />
         <link rel="alternate" hrefLang="en" href="https://www.jmrodri.site/en" />
         <link rel="alternate" hrefLang="x-default" href="https://www.jmrodri.site" />
+
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_MEASUREMENT_ID}');
+          `}
+        </Script>
 
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }} />
 
